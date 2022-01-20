@@ -166,18 +166,13 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>About</h2>
-            <p id="aboutText">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <p id="aboutText"></p>
           </div>
           <img
             id="aboutPic"
             src="assets/img/profile-img.jpg"
             class="img-fluid center"
-            alt=""
+            alt="picture of person in their about section"
           />
         </div>
       </section>
@@ -220,49 +215,47 @@
             <div class="col-lg-6">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Senior graphic design specialist</h4>
-                <h5>2019 - Present</h5>
-                <p><em>Experion, New York, NY </em></p>
+                <h4 id="job1Position"></h4>
+                <h5 id="job1TimeIn"></h5>
+                <p><em id="job1City"></em></p>
                 <ul>
-                  <li>
-                    Lead in the design, development, and implementation of the
-                    graphic, layout, and production communication materials
-                  </li>
-                  <li>
-                    Delegate tasks to the 7 members of the design team and
-                    provide counsel on all aspects of the project.
-                  </li>
-                  <li>
-                    Supervise the assessment of all graphic materials in order
-                    to ensure quality and accuracy of the design
-                  </li>
-                  <li>
-                    Oversee the efficient use of production project budgets
-                    ranging from $2,000 - $25,000
-                  </li>
+                  <li id="job1Bullet1"></li>
+                  <li id="job1Bullet2"></li>
+                  <li id="job1Bullet3"></li>
+                  <li id="job1Bullet4"></li>
                 </ul>
               </div>
               <div class="resume-item">
-                <h4>Graphic design specialist</h4>
-                <h5>2017 - 2018</h5>
-                <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                <h4 id="job2Position"></h4>
+                <h5 id="job2TimeIn"></h5>
+                <p><em id="job2City"></em></p>
                 <ul>
-                  <li>
-                    Developed numerous marketing programs (logos,
-                    brochures,infographics, presentations, and advertisements).
-                  </li>
-                  <li>
-                    Managed up to 5 projects or tasks at a given time while
-                    under pressure
-                  </li>
-                  <li>
-                    Recommended and consulted with clients on the most
-                    appropriate graphic design
-                  </li>
-                  <li>
-                    Created 4+ design presentations and proposals a month for
-                    clients and account managers
-                  </li>
+                  <li id="job2Bullet1"></li>
+                  <li id="job2Bullet2"></li>
+                  <li id="job2Bullet3"></li>
+                  <li id="job2Bullet4"></li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4 id="job3Position"></h4>
+                <h5 id="job3TimeIn"></h5>
+                <p><em id="job3City"></em></p>
+                <ul>
+                  <li id="job3Bullet1"></li>
+                  <li id="job3Bullet2"></li>
+                  <li id="job3Bullet3"></li>
+                  <li id="job3Bullet4"></li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4 id="job4Position"></h4>
+                <h5 id="job4TimeIn"></h5>
+                <p><em id="job4City"></em></p>
+                <ul>
+                  <li id="job4Bullet1"></li>
+                  <li id="job4Bullet2"></li>
+                  <li id="job4Bullet3"></li>
+                  <li id="job4Bullet4"></li>
                 </ul>
               </div>
             </div>
@@ -326,8 +319,9 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
-                method="post"
+                name="contact"
+                method="POST"
+                data-netlify="true"
                 role="form"
                 class="php-email-form"
               >
@@ -414,7 +408,7 @@
           ></a>
         </div>
         <div class="copyright">
-          &copy; Copyright <strong><span>MyResume</span></strong
+          &copy; Copyright <strong><span id="name"></span></strong
           >. All Rights Reserved
         </div>
         <div class="credits">
