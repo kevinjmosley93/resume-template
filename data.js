@@ -8,7 +8,7 @@ const personInfo = {
     "Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.",
   // Recommended photo size 1920 × 1053
   backgroundImage:
-    "https://images.unsplash.com/photo-1496605692486-092c3480f3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    "https://i.imgur.com/9bSthTc.jpg",
 };
 
 // SOCIAL LINKS
@@ -303,6 +303,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
   heroEl.forEach((el) => {
     el.style.background = `url("${personInfo.backgroundImage}") top right no-repeat`;
   });
+  console.log('info', personInfo.backgroundImage)
   loopElementsAndReplaceLinks(socialLinksEl);
   loopElementsAndReplaceText(nameEl, personInfo.name);
   loopElementsAndReplaceText(addressEl, personInfo.address);
